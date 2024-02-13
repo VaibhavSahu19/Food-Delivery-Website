@@ -8,7 +8,7 @@ import AboutUs from "./components/about/AboutUs";
 import Error from "./components/Error";
 import { Outlet } from "react-router-dom";
 import RestuarantMenu from "./components/restuarantMenu/RestuarantMenu";
-
+import Chatbot from "./components/chatbot/chat";
 import UserContext from "./utils/UserContext";
 import { Provider } from "react-redux";
 import appStore from "./utils/redux/appStore";
@@ -79,6 +79,10 @@ const appRouter = createBrowserRouter([
         path: "/search",
         element: <SearchBar />,
       },
+      {
+        path:"/chatbot",
+        element: <Chatbot />
+      }
     ],
     errorElement: <Error />,
   },
