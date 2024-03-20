@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Waahguptaji/namaste-react#readme",
   "devDependencies": {
+    "buffer": "^6.0.3",
     "daisyui": "^4.5.0",
     "parcel": "^2.9.3",
     "postcss": "^8.4.32",
@@ -42,7 +43,8 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.17.0",
     "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^6.1.8"
   },
   "browserslist": [
     "last 2 versions"

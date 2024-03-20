@@ -15,6 +15,7 @@ import appStore from "./utils/redux/appStore";
 import Cart from "./components/cart/Cart";
 import { Auth0Provider } from "@auth0/auth0-react";
 import SearchBar from "./components/search/SearchBar";
+import RecipeForm from "./components/recipe/recipeform";
 
 const AppLayout = () => {
   const [userName, setUserName] = useState();
@@ -23,7 +24,7 @@ const AppLayout = () => {
   useEffect(() => {
     //Make an API call to get Username and data
     const data = {
-      name: "Sahil Gupta",
+      name: "Asmita",
     };
     setUserName(data.name);
   }, []);
@@ -80,8 +81,12 @@ const appRouter = createBrowserRouter([
         element: <SearchBar />,
       },
       {
-        path:"/chatbot",
+        path:"/recommendations",
         element: <Chatbot />
+      },
+      {
+        path:"/recipe",
+        element:<RecipeForm />
       }
     ],
     errorElement: <Error />,
