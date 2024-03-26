@@ -36,7 +36,7 @@ function RestaurantSearch() {
       <ul>
   {restaurants.data?.cards[1]?.groupedCard?.cardGroupMap?.DISH?.cards?.map((items) => (
     items && items.card && items.card.card && items.card.card.restaurant && items.card.card.restaurant.info &&
-    items.card.card.restaurant.info.avgRating > 4.2 && (
+    items.card.card.restaurant.info.avgRating > 4.5 && (
       <li key={items.card.card.restaurant.info.name}>
         {items.card.card.restaurant.info.name}
       </li>

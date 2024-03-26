@@ -6,7 +6,7 @@ const RecipeForm = () => {
   const APP_KEY = "2a8e753613ccb01b4d26d9716e1b971d";
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
-  const [query, setQuery] = useState("chicken");
+  const [query, setQuery] = useState("");
 
   useEffect(() => {
     getRecipes();
