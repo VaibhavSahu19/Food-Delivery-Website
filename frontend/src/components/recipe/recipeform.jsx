@@ -36,20 +36,20 @@ const RecipeForm = () => {
       <form class="text-gray-400 bg-gray-900 body-font" onSubmit={getSearch}>
         <div class="container py-10 mx-auto">
 
-          <div class="flex lg:w-1/2 w-full sm:flex-row flex-col mx-auto px-8 sm:px-0 items-end sm:space-x-4 sm:space-y-0 space-y-4">
-            <div class="relative sm:mb-0 flex-grow w-full">
+          <div class="flex lg:w-1/2 w-full sm:flex-row mx-auto px-8 sm:px-0 items-end sm:space-x-4 sm:space-y-0 space-y-4">
+            <div class="relative sm:mb-0 flex-grow w-full mr-10">
               <label for="full-name" class="leading-7 text-sm text-gray-400">Enter Ingredient (separate them using comma.)</label>
-              <input type="text" id="full-name" name="full-name" value={search} onChange={updateSearch} class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+              <input type="text" id="full-name" name="full-name" value={search} onChange={updateSearch} class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:bg-oink-tone focus:ring-2 focus:pink-tone focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
             </div>
 
-            <button type="submit" class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Search</button>
+            <button type="submit" class="text-white pink-tone border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Search</button>
           </div>
         </div>
       </form>
 
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-24">
-          <div class="flex flex-wrap -m-4 w-4/5 mx-auto">
+          <div class="grid grid-cols-3 mx-auto">
             {recipes.map(recipe => (
               <Recipe
                 key={recipe.recipe.label}
